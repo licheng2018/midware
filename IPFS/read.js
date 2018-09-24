@@ -5,8 +5,8 @@ const AES = require('./aes');
 var buff;
 var outcome;
 
-let key=fs.readFileSync('./key.yaml');
-let hashcode=fs.readFileSync('./hash.yaml').toString('utf-8');
+let key=fs.readFileSync('../PARSE/key.yaml');
+let hashcode=fs.readFileSync('../PARSE/uploaddata.yaml').toString('utf-8');
 console.log("The key is"+key);
 console.log("The hash is"+hashcode);
 ipfsFile.get(hashcode).then((buff)=>{
@@ -21,3 +21,4 @@ ipfsFile.get(hashcode).then((buff)=>{
     console.log(err);
 }
 )
+

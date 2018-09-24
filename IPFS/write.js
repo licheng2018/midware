@@ -2,8 +2,7 @@ const ipfsFile = require('./ipfsFile');
 const fs = require('fs');
 const crypto = require('crypto');
 const AES = require('./aes');
-const session_key=fs.createWriteStream('../PARSE/key.yaml');
-const hashcode=fs.createWriteStream('../PARSE/uploaddata.yaml');
+
 
 let addPath = "../IOT_protocol/MQTT/sensordata.yaml";
 let password = crypto.randomBytes(32).toString("hex");
