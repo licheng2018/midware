@@ -2,7 +2,7 @@
        
 
 CHANNEL_NAME:'mychannel',
-USER_NAME:'Admin@org1.example.com',
+USER_NAME:'User1@org1.example.com',
 MSPID:'Org1MSP',
 PRIVATE_KEY:'./certs/peer/msp/keystore/1da4c964007adc53382c3a67cdf0198ef6f506c2a202fcb4bbea858b8b929902_sk',
 SIGN_CERT:'./certs/peer/msp/signcerts/peer0.org1.example.com-cert.pem',

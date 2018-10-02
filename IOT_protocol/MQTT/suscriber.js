@@ -9,10 +9,11 @@ client.on('connect', function () {
   client.subscribe('presence');
 });
 
+console.log("Licheng logs");
  client.on('message', function (topic, message) {
  writableStream.write(message.toString());
  console.log(message.toString());
- process.exit();
+// process.exit();
 });
 
 /*
